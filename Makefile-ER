@@ -1,0 +1,13 @@
+FIGPATH = ER-Figs/
+DASTHRY = ER-Code/das-theory-sensitivity/
+
+das-theory-sensitivity-figs:
+	python ${DASTHRY}plotBasicSensitivity.py ${FIGPATH}
+	python ${DASTHRY}RRXcorrs.py ${FIGPATH}
+	python ${DASTHRY}TTXcorrs.py ${FIGPATH}
+	python ${DASTHRY}two-parallel-fibers.py ${FIGPATH}
+	python ${DASTHRY}two-orthogonal-lines.py ${FIGPATH}
+
+
+all-ER-figs:
+	make das-theory-sensitivity-figs
