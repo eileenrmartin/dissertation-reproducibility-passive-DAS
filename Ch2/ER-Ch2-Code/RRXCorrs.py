@@ -26,7 +26,7 @@ nSrc = 5000 # number of sources that will be recorded by A and B in separate rec
 dt = 0.005 # time step s
 times = np.arange(0.0,2.0, dt) # times at which receiver A and B record responses to each source
 nt = times.size # number of time steps recorded
-maxLag = 1.0 # maximum lag for cross-correlation s
+maxLag = 0.995#1.0 # maximum lag for cross-correlation s
 nLags = int(maxLag/dt) # number of time lag steps to do cross-correlation over
 timesXcorrs = np.arange(-nLags*dt,(nLags+1)*dt,dt) # time lags at which cross correlation is calculated
 
@@ -61,8 +61,8 @@ for i in range(nSrc):
 		# plot source
 		plt.scatter(xsrc[0],xsrc[1],marker='.',c='k',s=1)
 
-plt.scatter(xA[0],xA[1],marker='_',c='b',s=40)
-plt.scatter(xB[0],xB[1],marker='_',c='b',s=40)
+plt.scatter(xA[0],xA[1],marker='_',c='b',s=60)
+plt.scatter(xB[0],xB[1],marker='_',c='b',s=60)
 plt.annotate('x1',(xA[0]-300,xA[1]+300))
 plt.annotate('x2',(xB[0]-300,xB[1]+300))
 plt.annotate(r'$\phi_{Src}$'+' \n '+r'$=$'+' \n '+r' $0$',(-maxRad-800,0))
@@ -134,11 +134,10 @@ for i in range(nSrc):
 	if i%plotFrac == 1:
 		plt.plot(times,phi[i]+recordsBFibR[i,:],c='r',linewidth=0.2)
 plt.title('records B fiber')
-plt.ylabel('phiSrc')
 plt.xlabel('t (s)')
-plt.savefig(fig+'fiberRecsRRRayelgih')
+plt.savefig(fig+'fiberRecsRRRayleigh')
 
-
+# plot geophone and DAS cross correlations on top of each other
 plt.clf()
 for i in range(nSrc):
 	if i%plotFrac == 1:
@@ -150,6 +149,22 @@ plt.ylabel(r'$\phi_{Src}$',fontsize=26)
 plt.xlabel('t (s)')
 plt.savefig(fig+'XCorrsRRRayleigh')
 
+# plot just geophone and just DAS cross correlations side-by-side
+plt.subplot(1, 2, 1)
+for i in range(nSrc):
+	if i%plotFrac == 1:
+		plt.plot(timesXcorrs,phi[i]+xcorrsFibR[i,:],c='r',linewidth=0.2)
+plt.title('source-wise \n cross-corrs. fiber')
+plt.ylabel(r'$\phi_{Src}$',fontsize=26)
+plt.xlabel('t (s)')
+plt.subplot(1, 2, 2)
+for i in range(nSrc):
+	if i%plotFrac == 1:
+		plt.plot(timesXcorrs,phi[i]+xcorrsGeoR[i,:],c='k',linewidth=0.2)
+plt.title('source-wise \n cross-corrs. geophone')
+plt.xlabel('t (s)')
+plt.savefig(fig+'XCorrsSideBySideRRRayleigh')
+
 plt.clf()
 xcorrStackFibR = np.sum(xcorrsFibR,axis=0)
 plt.plot(timesXcorrs,xcorrStackFibR,c='r',label="fiber")
@@ -159,6 +174,17 @@ plt.xlim(-maxLag,maxLag)
 plt.title('avg. single-source cross-correlation')
 plt.xlabel('time-lag (s)')
 plt.savefig(fig+'stackedXCorrsRRRayleigh')
+
+plt.clf()
+plt.plot(timesXcorrs,xcorrStackGeoR,c='k')
+plt.xlim(-maxLag,maxLag)
+plt.title('avg. single source cross-correlation')
+plt.xlabel('time-lag (s)')
+plt.savefig(fig+'stackedXCorrsRRRayleighGeoOnly')
+
+
+
+
 
 # long record averages
 longRecAGeoR = np.zeros(ntlong,dtype=np.float32)

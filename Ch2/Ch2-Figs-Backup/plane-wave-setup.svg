@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="plane-wave-setup.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -103,7 +103,7 @@
        y2="138.48206"
        gradientUnits="userSpaceOnUse"
        spreadMethod="reflect"
-       gradientTransform="translate(-328.37648,779.90676)" />
+       gradientTransform="translate(-315.06046,784.22924)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4625-8"
@@ -132,7 +132,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(115.34985,-1056.9275)"
+       gradientTransform="translate(102.03383,-1061.25)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4646"
        xlink:href="#linearGradient4625-8"
@@ -199,7 +199,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(-353.27293,780.16337)"
+       gradientTransform="translate(-339.95691,784.48585)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4714"
        xlink:href="#linearGradient4625-47"
@@ -244,7 +244,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(140.85131,-1057.1282)"
+       gradientTransform="translate(127.53529,-1061.4507)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4773"
        xlink:href="#linearGradient4625-47-5"
@@ -277,7 +277,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(-378.29882,779.88096)"
+       gradientTransform="translate(-364.9828,784.20344)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4813"
        xlink:href="#linearGradient4625-7"
@@ -310,7 +310,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(165.37161,-1056.908)"
+       gradientTransform="translate(152.05559,-1061.2305)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4847"
        xlink:href="#linearGradient4625-8-0"
@@ -355,7 +355,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(-302.8774,779.66978)"
+       gradientTransform="translate(-289.56138,783.99226)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4884"
        xlink:href="#linearGradient4625-47-59"
@@ -400,7 +400,7 @@
        y1="138.48206"
        x1="105.70695"
        spreadMethod="reflect"
-       gradientTransform="translate(90.419566,-1056.5412)"
+       gradientTransform="translate(77.103553,-1060.8637)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient4927"
        xlink:href="#linearGradient4625-47-59-2"
@@ -455,16 +455,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.48"
+     inkscape:zoom="1.63"
      inkscape:cx="70.647265"
      inkscape:cy="119.14095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
-     inkscape:window-width="1336"
-     inkscape:window-height="810"
-     inkscape:window-x="176"
+     inkscape:window-width="1142"
+     inkscape:window-height="737"
+     inkscape:window-x="86"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
@@ -475,7 +475,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -486,7 +486,7 @@
      transform="translate(0,-782.362)">
     <path
        style="fill:none;stroke:#707070;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:none"
-       d="m 211.33218,899.95877 23.64209,0"
+       d="m 225.33218,899.95877 23.64209,0"
        id="path2985-6-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -495,84 +495,84 @@
        id="rect4609"
        width="12.407353"
        height="147.89566"
-       x="-222.16953"
-       y="844.44098"
+       x="-208.85352"
+       y="848.76343"
        transform="matrix(0.95114377,-0.30874833,0.30874833,0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4646);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-3"
        width="12.407353"
        height="147.89566"
-       x="221.55681"
-       y="-992.39325"
+       x="208.2408"
+       y="-996.7157"
        transform="matrix(-0.95114377,0.30874833,-0.30874833,-0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4714);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-36"
        width="12.407353"
        height="147.89566"
-       x="-247.06598"
-       y="844.69757"
+       x="-233.74997"
+       y="849.02002"
        transform="matrix(0.95114377,-0.30874833,0.30874833,0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4773);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-36-6"
        width="12.407353"
        height="147.89566"
-       x="247.05826"
-       y="-992.59393"
+       x="233.74225"
+       y="-996.91638"
        transform="matrix(-0.95114377,0.30874833,-0.30874833,-0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4813);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-1"
        width="12.407353"
        height="147.89566"
-       x="-272.09186"
-       y="844.41522"
+       x="-258.77588"
+       y="848.73767"
        transform="matrix(0.95114377,-0.30874833,0.30874833,0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4847);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-3-7"
        width="12.407353"
        height="147.89566"
-       x="271.57855"
-       y="-992.37354"
+       x="258.26257"
+       y="-996.69598"
        transform="matrix(-0.95114377,0.30874833,-0.30874833,-0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4884);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-36-3"
        width="12.407353"
        height="147.89566"
-       x="-196.67044"
-       y="844.20398"
+       x="-183.35443"
+       y="848.52643"
        transform="matrix(0.95114377,-0.30874833,0.30874833,0.95114377,0,0)" />
     <rect
        style="fill:url(#linearGradient4927);fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="rect4609-36-3-1"
        width="12.407353"
        height="147.89566"
-       x="196.62653"
-       y="-992.00702"
+       x="183.31052"
+       y="-996.32947"
        transform="matrix(-0.95114377,0.30874833,-0.30874833,-0.95114377,0,0)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 32.755414,1002.2363 209.932426,0"
+       d="m 46.755414,1002.2363 209.932426,0"
        id="path2985"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 55.60416,1026.6347 0,-209.93248"
+       d="m 69.60416,1026.6347 0,-209.93248"
        id="path2985-0"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.39999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.6, 1.4;stroke-dashoffset:0;marker-end:url(#Arrow2Mend-8)"
-       d="m 107.99059,932.86587 72.51134,-27.84642"
+       d="m 121.99059,932.86587 72.51134,-27.84642"
        id="path2985-0-0"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#707070;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:none"
-       d="m 108.72554,933.83278 60.33564,0"
+       d="m 122.72554,933.83278 60.33564,0"
        id="path2985-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -580,7 +580,7 @@
        xml:space="preserve"
        id="flowRoot5978"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Britannic Bold;-inkscape-font-specification:Britannic Bold"
-       transform="translate(-17.338709,779.53942)"><flowRegion
+       transform="translate(-3.338709,779.53942)"><flowRegion
          id="flowRegion5980"><rect
            id="rect5982"
            width="12.499994"
@@ -589,7 +589,7 @@
            y="134.91936" /></flowRegion><flowPara
          id="flowPara5984">ϕ</flowPara></flowRoot>    <path
        style="fill:none;stroke:#00ae1f;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:none"
-       d="M 204.99557,913.86621 216.5409,885.6404"
+       d="M 218.99557,913.86621 230.5409,885.6404"
        id="path2985-6-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -597,7 +597,7 @@
        xml:space="preserve"
        id="flowRoot5978-6"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Britannic Bold;-inkscape-font-specification:Britannic Bold"
-       transform="translate(53.319509,747.2338)"><flowRegion
+       transform="translate(67.319509,747.2338)"><flowRegion
          id="flowRegion5980-3"><rect
            id="rect5982-4"
            width="12.499994"
@@ -613,12 +613,12 @@
        sodipodi:rx="2.4193549"
        sodipodi:ry="2.4193549"
        d="m 213.30646,116.77419 a 2.4193549,2.4193549 0 1 1 -4.83871,0 2.4193549,2.4193549 0 1 1 4.83871,0 z"
-       transform="translate(-0.40322579,783.16846)" />
+       transform="translate(13.596774,783.16846)" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot5978-6-1"
        style="font-size:14px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Britannic Bold;-inkscape-font-specification:Britannic Bold"
-       transform="translate(8.9362711,748.11082)"><flowRegion
+       transform="translate(22.936271,748.11082)"><flowRegion
          id="flowRegion5980-3-4"><rect
            id="rect5982-4-6"
            width="58.064518"

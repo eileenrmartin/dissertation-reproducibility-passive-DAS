@@ -26,7 +26,7 @@ nSrc = 5000 # number of sources that will be recorded by A and B in separate rec
 dt = 0.005 # time step s
 times = np.arange(0.0,2.0, dt) # times at which receiver A and B record responses to each source
 nt = times.size # number of time steps recorded
-maxLag = 1.0 # maximum lag for cross-correlation s
+maxLag = 0.995 #1.0 # maximum lag for cross-correlation s
 nLags = int(maxLag/dt) # number of time lag steps to do cross-correlation over
 timesXcorrs = np.arange(-nLags*dt,(nLags+1)*dt,dt) # time lags at which cross correlation is calculated
 
@@ -59,8 +59,8 @@ for i in range(nSrc):
 		# plot source
 		plt.scatter(xsrc[0],xsrc[1],marker='.',c='k',s=1)
 
-plt.scatter(xA[0],xA[1],marker='|',c='m',s=40)
-plt.scatter(xB[0],xB[1],marker='|',c='m',s=40)
+plt.scatter(xA[0],xA[1],marker='|',c='m',s=60)
+plt.scatter(xB[0],xB[1],marker='|',c='m',s=60)
 plt.annotate('x1',(xA[0]-300,xA[1]+300))
 plt.annotate('x2',(xB[0]-300,xB[1]+300))
 plt.annotate(r'$\phi_{Src}$'+' \n '+r'$=$'+' \n '+r' $0$',(-maxRad-800,0))
@@ -135,6 +135,7 @@ plt.savefig(fig+'fiberRecsTTLove')
 
 plt.clf()
 
+# plot geophone and DAS xcorrs on top of each other
 for i in range(nSrc):
 	if i%plotFrac == 1:
 		plt.plot(timesXcorrs,phi[i]+xcorrsFibT[i,:],c='r',linewidth=0.3)
@@ -144,6 +145,23 @@ plt.xlim(-maxLag,maxLag)
 plt.ylabel(r'$\phi_{Src}$',fontsize=26)
 plt.xlabel('t (s)')
 plt.savefig(fig+'XCorrsTTLove')
+
+# plot just geophone and just DAS side-by-side
+plt.subplot(1, 2, 1)
+for i in range(nSrc):
+	if i%plotFrac == 1:
+		plt.plot(timesXcorrs,phi[i]+xcorrsFibT[i,:],c='r',linewidth=0.2)
+plt.title('source-wise \n cross-corrs. fiber')
+plt.ylabel(r'$\phi_{Src}$',fontsize=26)
+plt.xlabel('t (s)')
+plt.subplot(1, 2, 2)
+for i in range(nSrc):
+	if i%plotFrac == 1:
+		plt.plot(timesXcorrs,phi[i]+xcorrsGeoT[i,:],c='k',linewidth=0.2)
+plt.title('source-wise \n cross-corrs. geophone')
+plt.xlabel('t (s)')
+plt.savefig(fig+'XCorrsSideBySideTTLove')
+
 
 plt.clf()
 xcorrStackFibT = np.sum(xcorrsFibT,axis=0)

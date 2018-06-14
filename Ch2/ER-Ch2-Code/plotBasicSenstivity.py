@@ -64,7 +64,7 @@ for a in range(4):
         labels = ['100','200'] 
         axarr[a,0].set_yticklabels(labels,fontsize='x-small')
         axarr[a,0].set_xticklabels(anglelabels,fontsize='x-small')
-        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a])),xy=(-5*pi/6, 250),xytext=((-15*pi/16, 600)))
+        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a]))+' m',xy=(-5*pi/6, 250),xytext=((-15*pi/16, 600)))
         axarr[a,1].set_ylim(0,160)
         axarr[a,1].set_yticks([60,120])
         labels = ['60','120'] 
@@ -139,7 +139,7 @@ for a in range(4):
         labels = [str(t) for t in ticks] 
         axarr[a,0].set_yticklabels(labels,fontsize='x-small')
         axarr[a,0].set_xticklabels(anglelabels,fontsize='x-small')
-        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a])),xy=(-5*pi/6, 160),xytext=((-15*pi/16, 360)))
+        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a]))+' m',xy=(-5*pi/6, 160),xytext=((-15*pi/16, 360)))
         axarr[a,1].set_ylim(0,120)
         ticks = [50,100]
         axarr[a,1].set_yticks(ticks)
@@ -183,6 +183,7 @@ plt.savefig(fig+'multi_gauge_DAS_basic_sensitivity')
 
 
 phi2List = [np.pi/8, np.pi/4, 3*np.pi/8]
+phi2name = ['piOver8', 'piOver4', '3piOver8']
 # #################### Plots of particle velocity, point-wise strain rate and DAS 10 m gauge together #############
 for phi2idx,phi2 in enumerate(phi2List):
     plt.clf()
@@ -194,7 +195,7 @@ for phi2idx,phi2 in enumerate(phi2List):
         labels = ['100','200'] 
         axarr[a,0].set_yticklabels(labels,fontsize='x-small')
         axarr[a,0].set_xticklabels(anglelabels,fontsize='x-small')
-        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a])),xy=(-5*pi/6, 250),xytext=((-15*pi/16, 600)))
+        axarr[a,0].annotate("$\lambda$="+str(int(c/frequencies[a]))+' m',xy=(-5*pi/6, 250),xytext=((-15*pi/16, 600)))
         axarr[a,1].set_ylim(0,80)
         axarr[a,1].set_yticks([30,60])
         labels = ['30','60'] 
@@ -246,4 +247,4 @@ for phi2idx,phi2 in enumerate(phi2List):
         sensitivities = SHSensitivityDAS(c,lam,theta,phis,g)
         axarr[idx, 2].plot(phis, sensitivities,c='blue',linewidth=2)
     axarr[0, 2].set_title('DAS, '+str(int(g))+' m gauge')
-    plt.savefig(fig+'geophone_ptStrRate_DAS_'+str(int(g))+'gauge_body_wave_sensitivity_phi2_'+str(phi2idx))
+    plt.savefig(fig+'geophone_ptStrRate_DAS_'+str(int(g))+'gauge_body_wave_sensitivity_phi2_'+phi2name[phi2idx])

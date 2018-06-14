@@ -1,12 +1,12 @@
-FIGPATH = ER-Figs/
-DASTHRY = ER-Code/das-theory-sensitivity/
+ER2FIGPATH = ER-Ch2-Figs/
+DASTHRY = ER-Ch2-Code/
 
 das-theory-sensitivity-figs:
-	python ${DASTHRY}plotBasicSensitivity.py ${FIGPATH}
-	python ${DASTHRY}RRXcorrs.py ${FIGPATH}
-	python ${DASTHRY}TTXcorrs.py ${FIGPATH}
-	python ${DASTHRY}two-parallel-fibers.py ${FIGPATH}
-	python ${DASTHRY}two-orthogonal-lines.py ${FIGPATH}
+	python ${DASTHRY}plotBasicSenstivity.py ${ER2FIGPATH}
+	python ${DASTHRY}RRXcorrs.py ${ER2FIGPATH}
+	python ${DASTHRY}TTXcorrs.py ${ER2FIGPATH}
+	python ${DASTHRY}two-parallel-fibers.py ${ER2FIGPATH}
+	python ${DASTHRY}two-orthogonal-lines.py ${ER2FIGPATH}
 
 
 all-ER-figs:
